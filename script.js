@@ -2,7 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 /* LENIS – smoother config */
 const lenis = new Lenis({
-  duration: 1.2, // ↑ higher = smoother
+  duration: 1.5, // ↑ higher = smoother
   easing: (t) => 1 - Math.pow(1 - t, 3), // easeOutCubic
   smooth: true,
   smoothTouch: false, // avoid lag on mobile
@@ -17,7 +17,7 @@ gsap.utils.toArray(".float-img").forEach((img) => {
     { y: -100 },
     {
       y: 100,
-      ease: "none",
+      ease: "linear", // or "none"
       scrollTrigger: {
         trigger: img,
         start: "top bottom",
@@ -304,13 +304,39 @@ setInterval(() => {
 const track = document.querySelector(".client-track");
 const logos = gsap.utils.toArray(".client-logo");
 
-// Total width for seamless loop
+// Calculate half width (because logos are duplicated)
 let totalWidth = 0;
-logos.forEach((logo) => (totalWidth += logo.offsetWidth + 60)); // 60 = gap
+logos.forEach((logo) => {
+  totalWidth += logo.offsetWidth + 60; // 60 = gap
+});
+
+const loopWidth = totalWidth / 2;
+
+gsap.set(track, { x: 0 });
 
 gsap.to(track, {
-  x: `-${totalWidth / 2}px`,
-  duration: 10, // adjust speed
-  ease: "linear",
+  x: -loopWidth,
+  duration: 6, // very fast
+  ease: "none",
   repeat: -1,
 });
+
+// client reviews
+// ===============
+const testimonialsTrack = document.querySelector(".testimonials-track");
+const testimonialCards = gsap.utils.toArray(".testimonial-card");
+
+let trackTotalWidth = 0;
+testimonialCards.forEach(card => {
+  trackTotalWidth += card.offsetWidth + 40; // card width + gap
+});
+
+gsap.to(testimonialsTrack, {
+  x: `-${trackTotalWidth / 2}px`, // move only half for seamless loop
+  duration: 25,                    // adjust speed as needed
+  ease: "linear",
+  repeat: -1,
+  yoyo:true
+});
+
+
