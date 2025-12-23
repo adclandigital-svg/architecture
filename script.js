@@ -1,14 +1,30 @@
 gsap.registerPlugin(ScrollTrigger);
 
 /* LENIS – smoother config */
+// const lenis = new Lenis({
+//   duration: 1.5, // ↑ higher = smoother
+//   easing: (t) => 1 - Math.pow(1 - t, 3), // easeOutCubic
+//   smooth: true,
+//   smoothTouch: false, // avoid lag on mobile
+//   wheelMultiplier: 0.9, // softer wheel input
+//   touchMultiplier: 1.2,
+// });
+
 const lenis = new Lenis({
-  duration: 1.5, // ↑ higher = smoother
+  duration: 1.5,           // higher = smoother
   easing: (t) => 1 - Math.pow(1 - t, 3), // easeOutCubic
   smooth: true,
-  smoothTouch: false, // avoid lag on mobile
-  wheelMultiplier: 0.9, // softer wheel input
+  smoothTouch: false,
+  wheelMultiplier: 0.9,
   touchMultiplier: 1.2,
 });
+
+// RAF loop for Lenis
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
 
 // Select all images
 gsap.utils.toArray(".float-img").forEach((img) => {

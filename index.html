@@ -6,40 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>demo</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
 </head>
 
 <body>
-
     <!-- NAVBAR -->
     <header class="navbar">
         <div class="nav-container">
-
-            <!-- LEFT -->
             <div class="logo">
-                <img src="./assets/logo.png" width="120" />
+                <img src="./assets/logo.png" width="120" loading="lazy" />
             </div>
-
-            <!-- CENTER -->
             <nav class="nav-links">
                 <a href="#">Residential</a>
                 <a href="#">Commercial</a>
-
-                <!-- HAMBURGER -->
                 <div class="menu-toggle">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </nav>
-
         </div>
     </header>
 
@@ -49,7 +40,6 @@
             <span></span>
             <span></span>
         </button>
-
         <nav class="sidebar-links">
             <a href="#">Residential</a>
             <a href="#">Commercial</a>
@@ -61,369 +51,333 @@
 
     <!-- HERO -->
     <section class="section hero">
-        <video class="hero-video" autoplay muted loop playsinline>
-            <source src="./assets/banner3.mp4" type="video/mp4">
+        <video class="hero-video" autoplay muted loop playsinline preload="none" poster="./assets/banner3-poster.jpg">
+            <source src="./assets/banner3.mp4" type="video/mp4" />
         </video>
     </section>
 
-    <!-- SECOND -->
-
+    <!-- SECOND / THIRD SECTION -->
     <section class="section third third-section">
-        <h1>Giving the <br> best just for you</h1>
+        <h1>
+            Giving the <br />
+            best just for you
+        </h1>
         <div class="third-second">
             <div class="third-second-img">
-                <img class="slide-img  active"
+                <img class="slide-img active"
                     src="https://img.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2185.jpg"
-                    alt="residential">
-                <img class="slide-img "
+                    alt="residential" loading="lazy" />
+                <img class="slide-img"
                     src="https://img.freepik.com/free-photo/modern-interior-design-office_181624-21578.jpg"
-                    alt="commercial">
-                <img class="slide-img "
-                    src="https://img.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2185.jpg"
-                    alt="residential">
-                <img class="slide-img "
+                    alt="commercial" loading="lazy" />
+                <img class="slide-img"
+                    src="https://img.freepik.com/free-photo/minimalist-office-interior-design_23-2151826250.jpg?t=st=1766473652~exp=1766477252~hmac=6d0309ea549431e4e7a764a9d0f2b96ec5974b9108246429001fff3d5369ac0d&w=1480"
+                    alt="residential" loading="lazy" />
+                <img class="slide-img"
                     src="https://img.freepik.com/free-photo/modern-interior-design-office_181624-21578.jpg"
-                    alt="commercial">
+                    alt="commercial" loading="lazy" />
             </div>
-
             <div class="third-second-text">
                 <div class="residential-text active">
                     <h1>Residentials</h1>
                     <p>
-                        Thoughtfully designed homes that blend comfort,
-                        functionality, and modern
-                        aesthetics. Every space is planned to enhance daily
-                        living, natural flow,
-                        and long-term value.
+                        Thoughtfully designed homes that blend comfort, functionality, and
+                        modern aesthetics. Every space is planned to enhance daily living,
+                        natural flow, and long-term value.
                     </p>
                     <p>
-                        From private residences to luxury apartments, we
-                        focus on detail, material
-                        quality, and timeless design that feels personal and
+                        From private residences to luxury apartments, we focus on detail,
+                        material quality, and timeless design that feels personal and
                         refined.
                     </p>
                 </div>
             </div>
         </div>
 
-        </div>
         <div class="third-second">
             <div class="third-second-img">
-                <img class="slide-img  active"
-                    src="https://img.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2185.jpg"
-                    alt="residential">
-                <img class="slide-img "
-                    src="https://img.freepik.com/free-photo/modern-interior-design-office_181624-21578.jpg"
-                    alt="commercial">
-                <img class="slide-img "
-                    src="https://img.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table_105762-2185.jpg"
-                    alt="residential">
-                <img class="slide-img "
-                    src="https://img.freepik.com/free-photo/modern-interior-design-office_181624-21578.jpg"
-                    alt="commercial">
+                <img class="slide-img active"
+                    src="https://img.freepik.com/free-photo/minimalist-office-interior-design_23-2151826242.jpg?t=st=1766473565~exp=1766477165~hmac=ee474eef7a9833808e6dbfe77557a4ef5a9fffdb1d657dece13cf85c21eb78f5&w=1480"
+                    alt="residential" loading="lazy" />
+                <img class="slide-img"
+                    src="https://img.freepik.com/free-photo/minimalist-office-interior-design_23-2151826265.jpg?t=st=1766473605~exp=1766477205~hmac=185a1c133c60fe1e53c0dbda3566076af4a07aec45a26015d6fbdf8b87dbe717&w=1480"
+                    alt="commercial" loading="lazy" />
+                <img class="slide-img"
+                    src="https://img.freepik.com/free-photo/minimalist-office-interior-design_23-2151826239.jpg?t=st=1766473624~exp=1766477224~hmac=35b1cc1ad37845c97707e292c21cefb6e18e1578fbc3160e39a523ccec71142e&w=1480"
+                    alt="residential" loading="lazy" />
+                <img class="slide-img"
+                    src="https://img.freepik.com/free-photo/minimalist-office-interior-design_23-2151826250.jpg?t=st=1766473652~exp=1766477252~hmac=6d0309ea549431e4e7a764a9d0f2b96ec5974b9108246429001fff3d5369ac0d&w=1480"
+                    alt="commercial" loading="lazy" />
             </div>
-
-
             <div class="third-second-text">
                 <div class="commercial-text">
                     <h1>Commercial</h1>
                     <p>
-                        Smart, scalable commercial spaces designed to
-                        enhance productivity and brand
-                        presence. Built with efficiency, flexibility, and
+                        Smart, scalable commercial spaces designed to enhance productivity
+                        and brand presence. Built with efficiency, flexibility, and
                         performance in mind.
                     </p>
                     <p>
-                        Offices, retail, and workspaces crafted to adapt,
-                        grow, and support modern
-                        business needs without compromising on design
+                        Offices, retail, and workspaces crafted to adapt, grow, and
+                        support modern business needs without compromising on design
                         clarity.
                     </p>
                 </div>
             </div>
-
         </div>
-
     </section>
 
+    <!-- LEGACY SECTION -->
     <section class="section second">
-        <h2 class="section-title">Our Legacy in <br> Design & Living</h2>
-
-        <div class="second-div ">
+        <h2 class="section-title">
+            Our Legacy in <br />
+            Design & Living
+        </h2>
+        <div class="second-div">
             <div class="second-div1">
                 <img class="float-img"
-                    src="https://img.freepik.com/free-photo/3d-rendering-luxury-modern-living-room-with-fabric-sofa_105762-2186.jpg?t=st=1766395003~exp=1766398603~hmac=47c3a1df2c415a29efa1372cc0637a3ec0dde321e4ebdf3ad8da2bf2182db3b3&w=1480" />
+                    src="https://img.freepik.com/free-photo/3d-rendering-luxury-modern-living-room-with-fabric-sofa_105762-2186.jpg"
+                    loading="lazy" />
                 <img class="float-img"
-                    src="https://img.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-bookshelf_105762-2182.jpg?t=st=1766395234~exp=1766398834~hmac=8ce2dd94851a5d9f0c15281e8bd57add6e7855ccaae8cbba75feb50f43c6a482&w=1480" />
+                    src="https://img.freepik.com/free-photo/3d-rendering-loft-luxury-living-room-with-bookshelf_105762-2182.jpg"
+                    loading="lazy" />
                 <img class="float-img"
-                    src="https://img.freepik.com/free-photo/living-room-scandinavian-interior-design_53876-146865.jpg?t=st=1766395271~exp=1766398871~hmac=a2e6013b7cdd3524b13518453ec9f74dc6ad4329eabede6a3e999ab0f7e61c83&w=1480" />
+                    src="https://img.freepik.com/free-photo/living-room-scandinavian-interior-design_53876-146865.jpg"
+                    loading="lazy" />
             </div>
 
             <div class="second-div2">
-                <h3>Being alive means energizing your body, expanding your mind, and awakening your soul. Discover
-                    spaces designed to help you live, work, shop and play fully.</h3>
+                <h3>
+                    Being alive means energizing your body, expanding your mind, and
+                    awakening your soul. Discover spaces designed to help you live,
+                    work, shop and play fully.
+                </h3>
                 <div>
                     <div class="second-div2-inner">
-                        <h1>
-                            <span data-count="50">0</span><span class="plus">+</span>
-                        </h1>
+                        <h1><span data-count="50">0</span><span class="plus">+</span></h1>
                         <p>Complete Projects</p>
                     </div>
-
                     <div class="second-div2-inner">
-                        <h1>
-                            <span data-count="70">0</span><span class="plus">+</span>
-                        </h1>
+                        <h1><span data-count="70">0</span><span class="plus">+</span></h1>
                         <p>Years Experience</p>
                     </div>
-
                     <div class="second-div2-inner">
-                        <h1>
-                            <span data-count="15">0</span><span class="plus">+</span>
-                        </h1>
+                        <h1><span data-count="15">0</span><span class="plus">+</span></h1>
                         <p>Lakh sq.m Delivered</p>
                     </div>
-
                     <div class="second-div2-inner">
-                        <h1>
-                            <span data-count="14">0</span><span class="plus">+</span>
-                        </h1>
+                        <h1><span data-count="14">0</span><span class="plus">+</span></h1>
                         <p>Awards Won</p>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
+    <!-- ARCHITECTURAL FACILITIES -->
     <section class="arch-facilities">
         <div class="arch-container">
-
             <div class="arch-header">
-                <h2>Signature <br>Architectural Amenities</h2>
+                <h2>Signature <br />Architectural Amenities</h2>
                 <p>
                     Our residential flats are equipped with carefully curated amenities
                     designed for comfort, convenience, and modern living.
                 </p>
             </div>
-
             <div class="arch-slider-wrapper">
                 <button class="arch-nav prev">‹</button>
-
                 <div class="arch-grid">
                     <div class="arch-card">
-                        <img class="float-img" src="https://images.unsplash.com/photo-1570129477492-45c003edd2be">
+                        <img class="float-img" src="https://images.unsplash.com/photo-1570129477492-45c003edd2be"
+                            loading="lazy" />
                         <h3>Infinity Pool</h3>
                     </div>
-
                     <div class="arch-card">
-                        <img class="float-img" src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1">
+                        <img class="float-img" src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1"
+                            loading="lazy" />
                         <h3>Fitness Hub</h3>
                     </div>
-
                     <div class="arch-card">
-                        <img class="float-img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+                        <img class="float-img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+                            loading="lazy" />
                         <h3>Secure Parking</h3>
                     </div>
-
                     <div class="arch-card">
-                        <img class="float-img" src="https://images.unsplash.com/photo-1523217582562-09d0def993a6">
+                        <img class="float-img" src="https://images.unsplash.com/photo-1523217582562-09d0def993a6"
+                            loading="lazy" />
                         <h3>Landscape Gardens</h3>
                     </div>
-
                     <div class="arch-card">
-                        <img class="float-img" src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+                        <img class="float-img" src="https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+                            loading="lazy" />
                         <h3>Lounge Areas</h3>
                     </div>
-
                     <div class="arch-card">
-                        <img class="float-img" src="https://images.unsplash.com/photo-1509395176047-4a66953fd231">
+                        <img class="float-img" src="https://images.unsplash.com/photo-1509395176047-4a66953fd231"
+                            loading="lazy" />
                         <h3>Solar Power</h3>
                     </div>
-
                     <div class="arch-card">
-                        <img class="float-img" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4">
+                        <img class="float-img" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4"
+                            loading="lazy" />
                         <h3>Cycle Zone</h3>
                     </div>
-
                     <div class="arch-card">
-                        <img class="float-img" src="https://images.unsplash.com/photo-1600962815726-457c46a12681">
+                        <img class="float-img" src="https://images.unsplash.com/photo-1600962815726-457c46a12681"
+                            loading="lazy" />
                         <h3>Kids Play Area</h3>
                     </div>
                 </div>
-
                 <button class="arch-nav next">›</button>
             </div>
-
         </div>
     </section>
 
-
-
+    <!-- PORTFOLIO -->
     <section class="portfolio-section">
         <div class="portfolio-container">
-
-            <!-- Heading + Paragraph -->
             <div class="portfolio-header">
-                <h2>Featured <br>Architectural Projects</h2>
-                <p>Discover our signature projects that blend innovative design, functionality, and timeless elegance,
-                    shaping inspiring spaces for modern living and work.</p>
+                <h2>Featured <br />Architectural Projects</h2>
+                <p>
+                    Discover our signature projects that blend innovative design,
+                    functionality, and timeless elegance, shaping inspiring spaces for
+                    modern living and work.
+                </p>
             </div>
-
-
-            <!-- Projects Grid -->
             <div class="portfolio-grid">
                 <div class="portfolio-card">
                     <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
-                        alt="Project 1">
-                    <!-- <h3>Project 1</h3> -->
+                        loading="lazy" alt="Modern Living Room Interior">
+                </div>
+                <div class="portfolio-card">
+                    <img src="https://img.freepik.com/free-photo/3d-rendering-luxury-modern-living-room-with-fabric-sofa_105762-2186.jpg"
+                        loading="lazy" alt="Kitchen and Dining Area">
                 </div>
                 <div class="portfolio-card">
                     <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=600&q=80"
-                        alt="Project 2">
-                    <!-- <h3>Project 2</h3> -->
-                </div>
-                <div class="portfolio-card">
-                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=600&q=80"
-                        alt="Project 3">
-                    <!-- <h3>Project 3</h3> -->
+                        loading="lazy" alt="Bedroom Interior Design">
                 </div>
                 <div class="portfolio-card">
                     <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80"
-                        alt="Project 4">
-                    <!-- <h3>Project 4</h3> -->
+                        loading="lazy" alt="Bright Hallway and Interior">
                 </div>
                 <div class="portfolio-card">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
-                        alt="Project 5">
-                    <!-- <h3>Project 5</h3> -->
+                    <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=600&q=80"
+                        loading="lazy" alt="Modern House Exterior">
                 </div>
                 <div class="portfolio-card">
-                    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=600&q=80"
-                        alt="Project 6">
-                    <!-- <h3>Project 6</h3> -->
+                    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=600&q=80"
+                        loading="lazy" alt="Stylish Home Exterior at Sunset">
                 </div>
                 <div class="portfolio-card">
-                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=600&q=80"
-                        alt="Project 7">
-                    <!-- <h3>Project 7</h3> -->
+                    <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80"
+                        loading="lazy" alt="Living Room with Large Windows">
                 </div>
                 <div class="portfolio-card">
-                    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=600&q=80"
-                        alt="Project 8">
-                    <!-- <h3>Project 8</h3> -->
+                    <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=600&q=80"
+                        loading="lazy" alt="Luxury Modern Living Space">
                 </div>
             </div>
 
         </div>
     </section>
 
+    <!-- TESTIMONIALS -->
     <section class="adclan-testimonial-section">
-    <div class="adclan-testimonial-heading">
-        <h2>What Our Clients Say</h2>
-    </div>
-
-    <div class="adclan-testimonial-paragraph">
-        <p>Our clients love working with us. Here are some of their video testimonials after buying or selling their properties.</p>
-    </div>
-
-    <!-- Swiper Container -->
-    <div class="swiper adclan-swiper-container">
-        <div class="swiper-wrapper">
-            <!-- Slide 1 -->
-            <div class="swiper-slide adclan-slide-card">
-                <div class="adclan-video-wrapper">
-                   <video src="./assets/banner3.mp4" autoplay muted loop playsinline></video>
-                    <div class="adclan-video-text">
-                        <h3>John Anderson</h3>
-                        <p>Bought a 3BHK Apartment</p>
+        <div class="adclan-testimonial-heading">
+            <h2>What Our Clients Say</h2>
+        </div>
+        <div class="adclan-testimonial-paragraph">
+            <p>
+                Our clients love working with us. Here are some of their video
+                testimonials after buying or selling their properties.
+            </p>
+        </div>
+        <div class="swiper adclan-swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide adclan-slide-card">
+                    <div class="adclan-video-wrapper">
+                        <video src="./assets/1.mp4" autoplay muted loop playsinline preload="none"
+                            poster="./assets/banner3-poster.jpg"></video>
+                        <div class="adclan-video-text">
+                            <h3>John Anderson</h3>
+                            <p>Bought a 3BHK Apartment</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="swiper-slide adclan-slide-card">
-                <div class="adclan-video-wrapper">
-                    <video src="./assets/banner3.mp4" autoplay muted loop playsinline></video>
-                    <div class="adclan-video-text">
-                        <h3>Lisa Thompson</h3>
-                        <p>Invested in a Luxury Villa</p>
+                <!-- Slide 2 -->
+                <div class="swiper-slide adclan-slide-card">
+                    <div class="adclan-video-wrapper">
+                        <video src="./assets/2.mp4" autoplay muted loop playsinline preload="none"
+                            poster="./assets/banner3-poster.jpg"></video>
+                        <div class="adclan-video-text">
+                            <h3>Lisa Thompson</h3>
+                            <p>Invested in a Luxury Villa</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="swiper-slide adclan-slide-card">
-                <div class="adclan-video-wrapper">
-                    <video src="./assets/banner3.mp4" autoplay muted loop playsinline></video>
-                    <div class="adclan-video-text">
-                        <h3>Robert Williams</h3>
-                        <p>Sold Commercial Property Successfully</p>
+                <!-- Slide 3 -->
+                <div class="swiper-slide adclan-slide-card">
+                    <div class="adclan-video-wrapper">
+                        <video src="./assets/3.mp4" autoplay muted loop playsinline preload="none"
+                            poster="./assets/banner3-poster.jpg"></video>
+                        <div class="adclan-video-text">
+                            <h3>Robert Williams</h3>
+                            <p>Sold Commercial Property Successfully</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Slide 4 -->
-            <div class="swiper-slide adclan-slide-card">
-                <div class="adclan-video-wrapper">
-                    <video src="./assets/banner3.mp4" autoplay muted loop playsinline></video>
-                    <div class="adclan-video-text">
-                        <h3>Emily Davis</h3>
-                        <p>Bought a Modern Studio Apartment</p>
+                <!-- Slide 4 -->
+                <div class="swiper-slide adclan-slide-card">
+                    <div class="adclan-video-wrapper">
+                        <video src="./assets/1.mp4" autoplay muted loop playsinline preload="none"
+                            poster="./assets/banner3-poster.jpg"></video>
+                        <div class="adclan-video-text">
+                            <h3>Emily Davis</h3>
+                            <p>Bought a Modern Studio Apartment</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Slide 5 -->
-            <div class="swiper-slide adclan-slide-card">
-                <div class="adclan-video-wrapper">
-                   <video src="./assets/banner3.mp4" autoplay muted loop playsinline></video>
-                    <div class="adclan-video-text">
-                        <h3>Michael Johnson</h3>
-                        <p>Invested in a Waterfront Property</p>
+                <!-- Slide 5 -->
+                <div class="swiper-slide adclan-slide-card">
+                    <div class="adclan-video-wrapper">
+                        <video src="./assets/2.mp4" autoplay muted loop playsinline preload="none"
+                            poster="./assets/banner3-poster.jpg"></video>
+                        <div class="adclan-video-text">
+                            <h3>Michael Johnson</h3>
+                            <p>Invested in a Waterfront Property</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Slide 6 -->
-            <div class="swiper-slide adclan-slide-card">
-                <div class="adclan-video-wrapper">
-                    <video src="./assets/banner3.mp4" autoplay muted loop playsinline></video>
-                    <div class="adclan-video-text">
-                        <h3>Sophia Brown</h3>
-                        <p>Sold Her Apartment Above Market Price</p>
+                <!-- Slide 6 -->
+                <div class="swiper-slide adclan-slide-card">
+                    <div class="adclan-video-wrapper">
+                        <video src="./assets/3.mp4" autoplay muted loop playsinline preload="none"
+                            poster="./assets/banner3-poster.jpg"></video>
+                        <div class="adclan-video-text">
+                            <h3>Sophia Brown</h3>
+                            <p>Sold Her Apartment Above Market Price</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-
-
-
-
-    <!-- Include Font Awesome CDN in head -->
-
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-inner">
-
-            <!-- BRAND -->
             <div class="footer-brand">
-                <img src="./assets/logo.png" width="120" />
-                <p>Designing spaces that feel alive, balanced, and
-                    enduring.</p>
+                <img src="./assets/logo.png" width="120" loading="lazy" />
+                <p>Designing spaces that feel alive, balanced, and enduring.</p>
             </div>
-
-            <!-- NAVIGATION -->
             <div class="footer-nav">
                 <a href="#">About</a>
                 <a href="#">Projects</a>
                 <a href="#">Services</a>
                 <a href="#">Contact</a>
             </div>
-
-            <!-- SOCIAL + META -->
             <div class="footer-meta">
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -435,19 +389,17 @@
                     <span>Based in India</span>
                 </div>
             </div>
-
         </div>
     </footer>
 
     <!-- GSAP -->
-    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script>
 
     <!-- LENIS -->
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
