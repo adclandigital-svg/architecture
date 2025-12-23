@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 // });
 
 const lenis = new Lenis({
-  duration: 1.2,           // higher = smoother
+  duration: 1,           // higher = smoother
   easing: (t) => 1 - Math.pow(1 - t, 3), // easeOutCubic
   smooth: true,
   smoothTouch: false,
