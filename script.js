@@ -275,12 +275,22 @@ const prev = document.querySelector(".arch-nav.prev");
 const next = document.querySelector(".arch-nav.next");
 
 let index = 0;
-const visible = 4;
+let visible = getVisibleCount();
 
-function updateSlide() {
-  grid.style.transform = `translateX(-${index * (100 / visible)}%)`;
+/* ---------- helpers ---------- */
+function getVisibleCount() {
+  if (window.innerWidth <= 480) return 1; // mobile
+  if (window.innerWidth <= 768) return 2; // tablet
+  if (window.innerWidth <= 1024) return 3; // small laptop
+  return 4; // desktop
 }
 
+function updateSlide() {
+  const translateX = index * (100 / visible);
+  grid.style.transform = `translateX(-${translateX}%)`;
+}
+
+/* ---------- navigation ---------- */
 next.addEventListener("click", () => {
   index++;
   if (index > cards.length - visible) index = 0;
@@ -293,11 +303,28 @@ prev.addEventListener("click", () => {
   updateSlide();
 });
 
-setInterval(() => {
+/* ---------- auto slide ---------- */
+let autoSlide = setInterval(slideNext, 3500);
+
+function slideNext() {
   index++;
   if (index > cards.length - visible) index = 0;
   updateSlide();
-}, 3500);
+}
+
+/* ---------- resize handling ---------- */
+window.addEventListener("resize", () => {
+  const newVisible = getVisibleCount();
+
+  if (newVisible !== visible) {
+    visible = newVisible;
+    index = 0; // reset to prevent overflow
+    updateSlide();
+  }
+});
+
+/* ---------- init ---------- */
+updateSlide();
 
 //================ client =====================
 
@@ -323,20 +350,21 @@ gsap.to(track, {
 
 // client reviews
 // ===============
-const testimonialsTrack = document.querySelector(".testimonials-track");
-const testimonialCards = gsap.utils.toArray(".testimonial-card");
-
-let trackTotalWidth = 0;
-testimonialCards.forEach(card => {
-  trackTotalWidth += card.offsetWidth + 40; // card width + gap
-});
-
-gsap.to(testimonialsTrack, {
-  x: `-${trackTotalWidth / 2}px`, // move only half for seamless loop
-  duration: 25,                    // adjust speed as needed
-  ease: "linear",
-  repeat: -1,
-  yoyo:true
+const swiper = new Swiper(".adclan-swiper-container", {
+  slidesPerView: 3, // default for desktop
+  spaceBetween: 30,
+  loop: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  speed: 800,
+  breakpoints: {
+    1024: { slidesPerView: 3, spaceBetween: 30 },
+    768: { slidesPerView: 2, spaceBetween: 20 },
+    0: { slidesPerView: 1, spaceBetween: 10 } // <= 767px -> 1 slide
+  }
 });
 
 
